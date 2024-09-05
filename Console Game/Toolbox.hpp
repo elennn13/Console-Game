@@ -13,7 +13,7 @@ namespace tb {
 	// Располагает текст в консоли на позиции х и у 
 	void place_text(unsigned x, unsigned y, const char* text);
 	//Располагает обратный отсчет с delay секунд до 0 секунд в консоли на позиции х и у.
-	void place_timer(unsigned x, unsigned y, unsigned delay);
+	void place_timer(unsigned x, unsigned y, unsigned delay, const char* text = "0");
 }
 
 
