@@ -6,6 +6,7 @@ Creature::Creature(){ // конструктор по умолчанию
     damage_min = damage_max = 1;// минимальный и макимальный урон равны 1
     dodge_chance = 0;
     crit_chance = 0;
+    icon = ' ';
 }
 
 unsigned Creature::hit(Creature& target) const { // функция проверка промоха и критического удара

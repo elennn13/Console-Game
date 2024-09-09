@@ -6,7 +6,7 @@
 class Enemy : public Creature {
 
 private:
-	char icon;
+	
 	std::string name;
 
 public:

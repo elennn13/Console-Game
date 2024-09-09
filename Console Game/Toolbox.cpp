@@ -1,5 +1,4 @@
 #include "Toolbox.hpp"
-#include <iostream>
 #include <random> // гениратор случайных чисел 
 #include <Windows.h>
 #include <string>
@@ -28,10 +27,7 @@ void tb::place_cursor(unsigned x, unsigned y){
 
 }
 
-void tb::place_text(unsigned x, unsigned y, const char* text) {
-    tb::place_cursor(x, y);
-    std::cout << text;
-}
+
 
 void tb::place_timer(unsigned x, unsigned y, unsigned delay, const char* text) {
     for (unsigned s = delay; s > 0; --s) { // s- секунда

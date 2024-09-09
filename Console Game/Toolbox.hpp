@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 
 namespace tb {
 	// ¬озвращает случайное целое положительное число от 0 до end не включительно
@@ -11,7 +12,12 @@ namespace tb {
 	// ѕеремещает курсор в консоли на координаты х и у
 	void place_cursor(unsigned x, unsigned y);
 	// –асполагает текст в консоли на позиции х и у 
-	void place_text(unsigned x, unsigned y, const char* text);
+
+	template <typename ANY>
+	void place_text(unsigned x, unsigned y, ANY text) {
+		tb::place_cursor(x, y);
+		std::cout << text;
+	}
 	//–асполагает обратный отсчет с delay секунд до 0 секунд в консоли на позиции х и у.
 	void place_timer(unsigned x, unsigned y, unsigned delay, const char* text = "0");
 }
