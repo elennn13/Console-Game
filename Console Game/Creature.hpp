@@ -10,11 +10,13 @@ protected:
 	unsigned dodge_chance;  // вероятность в процентах полнгостью увернуться от атаки противника
 	unsigned crit_chance;   // вероятность (в процентах) нанести при атаке двойной ущерб
 	char icon;              // иконка существа на игровом полекарте
+
 public:
 	
 	Creature(); // конструктор по умолчанию.
 	virtual unsigned hit(Creature& target) const; // метод атаки другого существа
 	virtual void take_damage(unsigned damage); // метод получения ущерба 
 	virtual void print_stats() const = 0; // метод выводит характеристики существа на экран. метод чисто вирутальный
+	unsigned getHP() const;
 };
 

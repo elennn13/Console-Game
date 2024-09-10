@@ -10,7 +10,7 @@ private:
 	std::string name;
 
 public:
-	Enemy(char icon); // конструктор
+	Enemy(char icon, unsigned lvl = 1); // конструктор
 	Enemy(unsigned health_points, unsigned damage_min, // параметрический конструктор принимает иконку и здоровье и тд 
 		unsigned dodge_chance, unsigned crit_chance, 
 		char icon, std::string name); 

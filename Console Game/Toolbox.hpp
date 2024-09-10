@@ -18,6 +18,12 @@ namespace tb {
 		tb::place_cursor(x, y);
 		std::cout << text;
 	}
+	// 
+	
+	void place_title(unsigned x, unsigned y, std::string text, unsigned width, char space = ' ');
+
+
+
 	//Располагает обратный отсчет с delay секунд до 0 секунд в консоли на позиции х и у.
 	void place_timer(unsigned x, unsigned y, unsigned delay, const char* text = "0");
 }

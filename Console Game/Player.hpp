@@ -36,7 +36,9 @@ public:
 //	движение игрока по игр полю
 	void move();
 // 
-	void battle();
+	void battle(char enemy_type);
+	// 
+	void upgrade(unsigned y);
 
 
 

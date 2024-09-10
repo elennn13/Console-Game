@@ -13,6 +13,8 @@ Player player;
 
 int main(){
 
+    
+
     player.startPlace(field);
     field.printField();
     player.print_stats();

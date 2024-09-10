@@ -26,6 +26,15 @@ void tb::place_cursor(unsigned x, unsigned y){
     SetConsoleCursorPosition(handler, coord); // установить позицию курсора консоли//переместить курсор на координаты coord
 
 }
+void tb::place_title(unsigned x, unsigned y, std::string text, unsigned width, char space) {
+    unsigned textless_width = width - text.size(); // общее количество симвлолов  (слева и справа) по бокам от текста
+    unsigned left_spaces = textless_width / 2;
+    unsigned right_spaces = width - text.size() - left_spaces;
+    tb::place_cursor(x, y);
+    for (unsigned i = 0; i < left_spaces; ++i) std::cout << space; // перемещаем курсор на координаты
+    std::cout << text;
+    for (unsigned i = 0; i < right_spaces; ++i) std::cout << space;
+}
 
 
 
